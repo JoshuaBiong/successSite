@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoLy Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="wrapper">
+            <h1 class="title">Generate Image/Place/Thoughts</h1>
+            <img id="imagess" src="./assets/4.jpg" alt="cafe">
+
+            <button class="pickupButton" data-target="#main-target" onclick=sureUy()>Bet</button>
+            <button class="generate" onclick=getImage() type="button">Generate</button>
+        </div>
+    </section>
+
+    <!-- PopUp Modal -->
+    <div class="pop " id="main-target">
+        <div class="pop-overlay pop-button" data-target="#main-target"></div>
+        <div class="pop-inner">
+            <h2>Sure?</h2>
+            <h3>Yan na talaga?</h3>
+            <p>Give it five minutes to think about it muna!
+            </p>
+            <button class="button pop-button" data-target="#main-target">Close</button>
+        </div>
+    </div>
+    <!-- end of PopUp Modal -->
+</body>
+
+</html>
